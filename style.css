@@ -389,6 +389,37 @@ footer a {
   border-top: 0;
   margin-bottom: 20px;
 }
+.hamburger-menu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 60%;
+  max-width: 350px;
+  height: 100vh;
+  background-color: var(--body-bgcolor);
+  transform: translateX(-100%);
+  transition: 0.5s;
+  display: none;
+}
+.hamburger-menu.slide {
+  transform: translateX(0);
+}
+.hamburger-menu ul {
+  display: block;
+  margin-left: 0;
+}
+.hamburger-menu ul li {
+  padding: 12px 0;
+}
+.hamburger-menu ul li a {
+  color: #fff;
+  font-size: 0.8rem;
+  margin-left: 25px;
+}
+.hamburger-menu ul li a:hover {
+  color: orange;
+}
+
 /*---------------media-query-for-mobile---------------*/
 @media (max-width: 1100px) {
   .container {
@@ -419,6 +450,9 @@ footer a {
     cursor: pointer;
   }
   .search-icon img {
+    display: flex;
+  }
+  .hamburger-menu {
     display: flex;
   }
 }
