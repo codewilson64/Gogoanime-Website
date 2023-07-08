@@ -391,6 +391,7 @@ footer a {
 }
 .hamburger-menu {
   position: absolute;
+  position: fixed;
   top: 60px;
   left: 0;
   width: 60%;
@@ -438,6 +439,8 @@ footer a {
     display: none;
   }
   nav {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     padding: 20px 5%;
@@ -466,5 +469,11 @@ footer a {
   }
   .inner-right {
     margin-left: 0;
+  }
+  .cover-img {
+    margin-bottom: 10px;
+  }
+  .poster {
+    display: block;
   }
 }
